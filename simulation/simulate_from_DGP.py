@@ -32,91 +32,9 @@ def make_directories():
 
     :return: None
     """
-    os.mkdir("./data_h_bar")
-    os.mkdir("./data_h_bar/train")
-    os.mkdir("./data_h_bar/val")
-    os.mkdir("./data_h_bar/train/1")
-    os.mkdir("./data_h_bar/train/0")
-    os.mkdir("./data_h_bar/val/1")
-    os.mkdir("./data_h_bar/val/0")
-
-    os.mkdir("./data_v_bar")
-    os.mkdir("./data_v_bar/train")
-    os.mkdir("./data_v_bar/val")
-    os.mkdir("./data_v_bar/train/1")
-    os.mkdir("./data_v_bar/train/0")
-    os.mkdir("./data_v_bar/val/1")
-    os.mkdir("./data_v_bar/val/0")
-
-    os.mkdir("./data_full")
-    os.mkdir("./data_full/1")
-    os.mkdir("./data_full/0")
-
-
-def e_generator(y_dim, x_dim):
-    """
-    Generates the coordinates of the E
-    :param y_dim: The y dimensions of the input image
-    :param x_dim: The x dimensions of the input image
-    :return: The critical coordinates
-    :rtype: list
-    """
-    # Set all the critical points
-    A = [int(0.407 * y_dim), int(0.423 * x_dim)]
-    B = [int(0.407 * y_dim), int(0.589 * x_dim)]
-    C = [int(0.488 * y_dim), int(0.423 * x_dim)]
-    D = [int(0.488 * y_dim), int(0.589 * x_dim)]
-    E = [int(0.572 * y_dim), int(0.423 * x_dim)]
-    F = [int(0.572 * y_dim), int(0.581 * x_dim)]
-    G = [int(0.657 * y_dim), int(0.423 * x_dim)]
-    H = [int(0.657 * y_dim), int(0.581 * x_dim)]
-    I = [int(0.735 * y_dim), int(0.423 * x_dim)]
-    J = [int(0.735 * y_dim), int(0.589 * x_dim)]
-    K = [int(0.819 * y_dim), int(0.423 * x_dim)]
-    L = [int(0.819 * y_dim), int(0.589 * x_dim)]
-    M = [int(0.407 * y_dim), int(0.47 * x_dim)]
-    N = [int(0.819 * y_dim), int(0.47 * x_dim)]
-
-    return A, B, C, D, E, F, G, H, I, J, K, L, M, N
-
-
-def plot_image_with_e(image, A, B, C, D, E, F, G, H, I, J, K, L, M, N):
-    """
-    Plots an E on an input image
-    :param image: The input image
-    :param A, B, etc. list: The coordinates of the critical points
-    :return: image_with_e
-    """
-
-    # if im_type == "h_bar":
-    #     A[0] = A[0] + 40
-    #     C[0] = C[0] + 40
-    #     E[0] = E[0] + 40
-    #     G[0] = G[0] + 40
-    #     I[0] = I[0] + 40
-    #     K[0] = K[0] + 40
-    #
-    # elif im_type == "v_bar":
-    #     A[1] = A[1] + 40
-    #     B[1] = B[1] + 40
-    #     E[1] = E[1] + 40
-    #     F[1] = F[1] + 40
-    #     I[1] = I[1] + 40
-    #     J[1] = J[1] + 40
-    #     M[1] = M[1] + 40
-    #
-    # Top horizontal rectangle
-    image[A[0]:C[0], A[1]:B[1]] = 255
-
-    # Middle horizontal rectangle
-    image[E[0]:G[0], E[1]:F[1]] = 255
-
-    # Bottom horizontal rectangle
-    image[I[0]:K[0], I[1]:J[1]] = 255
-
-    # Vertical connector rectangle
-    image[A[0]:K[0], A[1]:M[1]] = 255
-    return image
+    os.mkdir("./data_full_pipeline")
+    os.mkdir("./data_full_pipeline/1")
+    os.mkdir("./data_full_pipeline/0")
 
 
 def sample_z_and_y():
@@ -127,9 +45,8 @@ def sample_z_and_y():
     """
     y = np.random.binomial(n=1, p=0.5, size=1)
     circle = np.random.binomial(n=1, p= 0.25, size=1)
-    #circle = np.random.binomial(n=1, p=special.expit(1.5 - 2.5 * y[0]), size=1)
-    v_bar = np.random.binomial(n=1, p=special.expit(0.3763 + 1.8308 * y[0]), size=1)
-    h_bar = np.random.binomial(n=1, p=special.expit(-0.687 - 1.03 * v_bar[0] + 1.69*y[0]), size=1)
+    v_bar = np.random.binomial(n=1, p=special.expit(0.3763 + 1.454 * y[0]), size=1)
+    h_bar = np.random.binomial(n=1, p=special.expit(-0.687 - 1.03 * v_bar[0] + 1.069*y[0]), size=1)
     triangle = np.random.binomial(n=1, p=special.expit(-2 + 1.3*circle[0] + 2.2*h_bar[0]), size=1)
     return {"Y": int(y[0]), "C": int(circle[0]), "T": int(triangle[0]), "H": int(h_bar[0]), "V": int(v_bar[0])}
 
@@ -255,22 +172,9 @@ def save_images(image_list):
     i = 0
     for im in image_list:
         im_name = "img_" + str(i) + ".png"
-        # random sample to determine whether image goes in train or validation
-        if np.random.uniform(size=1) < 0.8:
-            io.imsave("./data_h_bar/train/" + str(im["Y"]) + "/" + im_name, im["im_h_bar"])
-            io.imsave("./data_v_bar/train/" + str(im["Y"]) + "/" + im_name, im["im_v_bar"])
-        else:
-            io.imsave("./data_h_bar/val/" + str(im["Y"]) + "/" + im_name, im["im_h_bar"])
-            io.imsave("./data_v_bar/val/" + str(im["Y"]) + "/" + im_name, im["im_v_bar"])
-
-        io.imsave("./data_full/" + str(im["Y"]) + "/" + im_name, im["im_full"])
+        io.imsave("./data_full_pipeline/" + str(im["Y"]) + "/" + im_name, im["im_full"])
         i += 1
 
-
-# circle = np.random.binomial(n=1, p=special.expit(-1 + 2.5 * y), size=1)[0]
-# v_bar = np.random.binomial(n=1, p=special.expit(-0.84 + 1.68 * y), size=1)[0]
-# h_bar = np.random.binomial(n=1, p=special.expit(1.386 - 2 * 1.386 * v_bar), size=1)[0]
-# triangle = np.random.binomial(n=1, p=special.expit(1 + circle + h_bar), size=1)[0]
 def simulate_images(n_obs):
     """
     Function that takes in simulation parameters as input and returns image feature annotations as well as simulated

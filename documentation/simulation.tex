@@ -153,6 +153,8 @@ And for $\beta_2 = 1$, we have
 \mathbb{P}(Y = 1 \mid H =1, V = 0) = 0.377
 \end{align*}
 
+And having settled on all of these values, we can say $\mathbb{P}(Y = 1 \mid H = 1, V = 1) = 0.668$.
+
 Now, we choose $\mathbb{P}(H = 1 \mid V = 0) = 0.4$ and $\mathbb{P}(H = 1 \mid V = 1) = 0.7$ in order to avoid the collinearity problem. Next, solving for $\mathbb{P}(Y \mid V)$ can be done as
 \begin{equation*}
 \mathbb{P}(Y \mid V) = \sum_{H} \mathbb{P}(Y \mid V, H)\mathbb{P}(H \mid V)
@@ -204,11 +206,14 @@ Which leads to the following conditional distributions
 \mathbb{P}(H = 1 \mid V = 0, Y = 0) &= 0.3355\\
 \end{align*}
 
-So, each of these conditional probabilities can be used to back calculate coefficients for the logistic regression as:
+Now, having all of these probabilities, the following values for the logistic regression coefficients can be computed.
+
+\subsection{Computing Logistic Regression Probabilities}
+First, we compute the coefficients for $H ~ \alpha_0 + \alpha_1V + \alpha_2Y$. So, each of these conditional probabilities can be used to back calculate coefficients for the logistic regression as:
 \begin{align*}
 \alpha_0 &= -0.687\\
 \alpha_1 &= 1.03\\
-\alpha_2 &= 1.69
+\alpha_2 &= 1.069
 \end{align*}
 
 %Now, calculating the logistic regression probabilities for $\mathbb{P}(H \mid V)$, where $\mathbb{P}(H = 1\mid V = 0) = 0.4$ and $\mathbb{P}(H = 1\mid V = 1) = 0.7$, gives the following logistic regression coefficients:

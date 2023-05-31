@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  30 MAY 2023 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  31 MAY 2023 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -215,32 +215,32 @@ Overfull \hbox (10.74075pt too wide) in paragraph at lines 111--112
 <Do-SHAP_Counterexample.jpeg, id=49, 687.56876pt x 637.38126pt>
 File: Do-SHAP_Counterexample.jpeg Graphic file (type jpg)
 <use Do-SHAP_Counterexample.jpeg>
-Package pdftex.def Info: Do-SHAP_Counterexample.jpeg  used on input line 251.
+Package pdftex.def Info: Do-SHAP_Counterexample.jpeg  used on input line 256.
 (pdftex.def)             Requested size: 137.5113pt x 127.47398pt.
 
-Overfull \hbox (94.8381pt too wide) detected at line 268
+Overfull \hbox (94.8381pt too wide) detected at line 273
 []
  []
 
 [8 <./Do-SHAP_Counterexample.jpeg>] [9]
-<Z_after_X.jpeg, id=58, 861.2175pt x 921.4425pt>
+<Z_after_X.jpeg, id=57, 861.2175pt x 921.4425pt>
 File: Z_after_X.jpeg Graphic file (type jpg)
 <use Z_after_X.jpeg>
-Package pdftex.def Info: Z_after_X.jpeg  used on input line 333.
+Package pdftex.def Info: Z_after_X.jpeg  used on input line 338.
 (pdftex.def)             Requested size: 172.24045pt x 184.28523pt.
-<Z_after_X_no_sufficiency.jpeg, id=59, 1107.13625pt x 903.375pt>
+ [10 <./Z_after_X.jpeg>]
+<Z_after_X_no_sufficiency.jpeg, id=63, 1107.13625pt x 903.375pt>
 File: Z_after_X_no_sufficiency.jpeg Graphic file (type jpg)
 <use Z_after_X_no_sufficiency.jpeg>
-Package pdftex.def Info: Z_after_X_no_sufficiency.jpeg  used on input line 345.
+Package pdftex.def Info: Z_after_X_no_sufficiency.jpeg  used on input line 350.
 
 (pdftex.def)             Requested size: 221.42332pt x 180.6718pt.
- [10 <./Z_after_X.jpeg>]
 <Z_before_X.jpeg, id=64, 906.38625pt x 930.47626pt>
 File: Z_before_X.jpeg Graphic file (type jpg)
 <use Z_before_X.jpeg>
-Package pdftex.def Info: Z_before_X.jpeg  used on input line 357.
+Package pdftex.def Info: Z_before_X.jpeg  used on input line 362.
 (pdftex.def)             Requested size: 181.27403pt x 186.09195pt.
- [11 <./Z_after_X_no_sufficiency.jpeg> <./Z_before_X.jpeg>] [12] (./simulation.
+ [11 <./Z_after_X_no_sufficiency.jpeg>] [12 <./Z_before_X.jpeg>] (./simulation.
 aux) ) 
 Here is how much of TeX's memory you used:
  2346 strings out of 480608
@@ -271,7 +271,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/
 2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on simulation.pdf (12 pages, 1019006 bytes).
+Output written on simulation.pdf (12 pages, 1019379 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  90 compressed objects within 1 object stream
