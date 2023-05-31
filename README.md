@@ -18,6 +18,7 @@ This group of files serves to train a HydraNet model, and save the output as Hyd
 
 - HydraNet_data: Directory containing two sub-directories, train_data and val_data, and each of these contains images used to train HydraNet. The images contain the following shapes - horizontal bar, vertical bar, circle and triangle, and each of these is generated using an independent unbiased coin flip. 
 - train_net.ipynb: This is a jupyter notebook that uses the above training data to train HydraNet and save the trained model as HydraNet.pth.
+- simulate.py: File that generates the training and validation datasets to train the HydraNet model. 
 
 ### Full Black Box Model Files
 
