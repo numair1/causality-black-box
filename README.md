@@ -23,5 +23,4 @@ This group of files serves to train a HydraNet model, and save the output as Hyd
 ### Full Black Box Model Files
 
 - data_full: This directory contains 10k images, each containing horizontal bars, vertical bars, circles and triangles simulated from an unbiased coin toss.
-- train_net.ipyn: Jupyter notebook tha trains the HydraNet model and saves it as HydraNet.pth.
-- train_data/val_data: Data generated according to the data generating process described in the paper, TO DO: identify the correct file associated with this simulation, and re-name things accordingly.
+- simulate_from_DGP.py : generates images following the DGP outlined in documentation/simulation.pdf.
