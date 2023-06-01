@@ -43,10 +43,10 @@ def sample_z_and_y():
     go into the images
     :return: Dictionary of five ints representing binary indicators of the presence of shape in the image
     """
-    y = np.random.binomial(n=1, p=0.5, size=1)
+    y = np.random.binomial(n=1, p=0.4, size=1)
     circle = np.random.binomial(n=1, p= 0.25, size=1)
-    v_bar = np.random.binomial(n=1, p=special.expit(0.3763 + 1.454 * y[0]), size=1)
-    h_bar = np.random.binomial(n=1, p=special.expit(-0.687 - 1.03 * v_bar[0] + 1.069*y[0]), size=1)
+    v_bar = np.random.binomial(n=1, p=special.expit(-1.13 + 2.3 * y[0]), size=1)
+    h_bar = np.random.binomial(n=1, p=special.expit(-2.64 + 3.112 * v_bar[0] + 1.5974*y[0]), size=1)
     triangle = np.random.binomial(n=1, p=special.expit(-2 + 1.3*circle[0] + 2.2*h_bar[0]), size=1)
     return {"Y": int(y[0]), "C": int(circle[0]), "T": int(triangle[0]), "H": int(h_bar[0]), "V": int(v_bar[0])}
 
@@ -189,4 +189,4 @@ def simulate_images(n_obs):
 
 
 if __name__ == "__main__":
-    simulate_images(10000)
+    simulate_images(20000)
