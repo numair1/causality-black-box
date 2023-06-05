@@ -39,3 +39,16 @@ model is trained, and then used to generate predictions y_hat. This file is save
 #### Hyperparameter Settings
 
 TO DO: Add in details regarding the setting of various hyperparameters for replicability. 
+
+## Birds Data Example
+
+The dataset for this example can be downloaded at https://www.vision.caltech.edu/datasets/cub_200_2011/. 
+
+### Data Cleaning
+Once the daatast is downloaded, it can be cleaned by following the instrcutions below. 
+
+- data_cleaning/group_classes.py: Takes gthe CUB dataset where the individual folders are grouped into coarser folders 
+representing the 9 categories of birds we pick, and then copies the individual images into the relevant broad grouped directories.
+- data_cleaning/balance_classes.py: Downsamples the over-represented classes outputeed from the above coarse grouping.
+- data_cleaning/split_data.py: Splits the dataset into a 70-15-15 train/val/test split.
+- data_cleaning/colorize.py: Discards .DS_Store files as well as images that are in grayscale.
