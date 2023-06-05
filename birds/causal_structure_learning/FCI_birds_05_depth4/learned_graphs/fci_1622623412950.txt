@@ -1,0 +1,86 @@
+================================================================================
+FCI (Wed, June 02, 2021 04:43:33 AM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: subsample_11.csv
+header: yes
+delimiter: tab
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FCI
+test of independence: Chi Square Test
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: no
+alpha: 0.05
+completeRuleSetUsed: yes
+depth: 4
+fasHeuristic: 1
+maxPathLength: -1
+numberResampling: 0
+percentResampleSize: 90
+resamplingEnsemble: 0
+resamplingWithReplacement: no
+stableFAS: yes
+verbose: no
+
+
+Wed, June 02, 2021 04:43:33 AM: Start data validation on file subsample_11.csv.
+Wed, June 02, 2021 04:43:33 AM: End data validation on file subsample_11.csv.
+There are 3538 cases and 27 variables.
+
+Wed, June 02, 2021 04:43:33 AM: Start reading in file subsample_11.csv.
+Wed, June 02, 2021 04:43:33 AM: Finished reading in file subsample_11.csv.
+Wed, June 02, 2021 04:43:33 AM: File subsample_11.csv contains 3538 cases, 27 variables.
+Wed, June 02, 2021 04:43:33 AM: Start reading in file knowledge.txt.
+Wed, June 02, 2021 04:43:33 AM: Finished reading in file knowledge.txt.
+
+Start search: Wed, June 02, 2021 04:43:33 AM
+End search: Wed, June 02, 2021 04:53:03 AM
+
+================================================================================
+Graph Nodes:
+back_color;back_pattern;belly_color;belly_pattern;bill_color;bill_length;bill_shape;breast_color;breast_pattern;crown_color;eye_color;forehead_color;leg_color;nape_color;primary_color;size;tail_pattern;tail_shape;throat_color;under_tail_color;underparts_color;upper_tail_color;upperparts_color;wing_color;wing_pattern;wing_shape;y_pred
+
+Graph Edges:
+1. back_pattern --> wing_pattern dd nl
+2. belly_pattern --> belly_color dd nl
+3. breast_color --> breast_pattern dd nl
+4. breast_pattern --> belly_pattern dd nl
+5. tail_pattern --> tail_shape dd nl
+6. tail_shape --> underparts_color dd nl
+7. tail_shape --> y_pred dd nl
+8. underparts_color --> breast_color dd nl
+9. underparts_color --> wing_pattern dd nl
+10. upper_tail_color --> wing_shape dd nl
+11. wing_shape --> tail_pattern dd nl
+12. wing_shape --> tail_shape pd nl
+13. wing_shape --> wing_pattern pd nl
+14. wing_shape --> y_pred pd nl
+15. throat_color --> y_pred pd pl
+16. back_pattern <-> breast_pattern
+17. back_pattern <-> tail_pattern
+18. breast_pattern <-> wing_pattern
+19. crown_color o-o forehead_color
+20. forehead_color o-o throat_color
+21. leg_color o-> size
+22. nape_color o-> wing_pattern
+23. primary_color o-> under_tail_color
+24. size <-> wing_pattern
+25. size <-> wing_shape
+26. throat_color o-> upper_tail_color
+27. under_tail_color <-> upper_tail_color
+28. upperparts_color o-> back_pattern
+29. upperparts_color o-o wing_color
+30. wing_pattern <-> tail_pattern
