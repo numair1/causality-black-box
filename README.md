@@ -45,10 +45,23 @@ TO DO: Add in details regarding the setting of various hyperparameters for repli
 The dataset for this example can be downloaded at https://www.vision.caltech.edu/datasets/cub_200_2011/. 
 
 ### Data Cleaning
-Once the daatast is downloaded, it can be cleaned by following the instrcutions below. 
+Once the daatast is downloaded, it can be cleaned using the code below.   
 
-- data_cleaning/group_classes.py: Takes gthe CUB dataset where the individual folders are grouped into coarser folders 
-representing the 9 categories of birds we pick, and then copies the individual images into the relevant broad grouped directories.
-- data_cleaning/balance_classes.py: Downsamples the over-represented classes outputeed from the above coarse grouping.
+- data_cleaning/group_classes.py: Takes the CUB dataset where folders containing images of different species of birds have
+been grouped into a bigger folder representing the coarse grouping, and the code copies all of the images in these species 
+sub directories into the coarse grouping directory. The 9 categories we pick are: 
+1. Flycatcher
+2. Gull
+3. Kingfisher
+4. Sparrow 
+5. Tern 
+6. Vireo 
+7. Warbler 
+8. Woodpecker 
+9. Wren
+
+The output of this is saved in data/consolidated_dataset. This gives an image dataset containing 5514 images.
+- data_cleaning/balance_classes.py: Downsamples the over-represented classes outputted from the above coarse grouping saved the directory
+data/consolidated_dataset. Sparrow and Warbler are overrepresented and consequently downsampled. 
 - data_cleaning/split_data.py: Splits the dataset into a 70-15-15 train/val/test split.
 - data_cleaning/colorize.py: Discards .DS_Store files as well as images that are in grayscale.
