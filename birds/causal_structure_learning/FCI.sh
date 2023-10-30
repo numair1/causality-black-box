@@ -1,2 +1,1 @@
-java -jar causal-cmd-1.1.3-jar-with-dependencies.jar --dataset $1 --data-type discrete --algorithm fci --delimiter tab --alpha $2 \
---out $3 --depth $4 --completeRuleSetUsed --test chi-square-test --knowledge knowledge.txt --verbose
+java -jar causal-cmd-1.3.0-jar-with-dependencies.jar --dataset $1 --data-type discrete --algorithm fci --delimiter tab --alpha $2 --depth $4 --completeRuleSetUsed --test chi-square-test --knowledge knowledge.txt  --stableFAS --out $3

@@ -1,0 +1,142 @@
+2023-10-30 11:24:14 INFO  org.reflections.Reflections:229 - Reflections took 122 ms to scan 1 urls, producing 17 keys and 266 values 
+2023-10-30 11:24:14 INFO  org.reflections.Reflections:229 - Reflections took 22 ms to scan 1 urls, producing 7 keys and 41 values 
+2023-10-30 11:24:14 INFO  org.reflections.Reflections:229 - Reflections took 16 ms to scan 1 urls, producing 5 keys and 34 values 
+2023-10-30 11:24:20 ERROR edu.cmu.tetrad.latest.LatestClient:105 - Could not contact server for latest version
+org.apache.http.conn.ConnectTimeoutException: Connect to cloud.ccd.pitt.edu:443 [cloud.ccd.pitt.edu/136.142.228.58] failed: Connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at edu.cmu.tetrad.latest.LatestClient.checkLatest(LatestClient.java:81)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.main(CausalCmdApplication.java:97)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 11 more
+2023-10-30 11:24:20 ERROR edu.pitt.dbmi.causal.cmd.CausalCmdApplication:107 - 
+java.nio.file.NoSuchFileException: recreate_results/learned_graphs/fci_1698679455182.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:224)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.runTetrad(CausalCmdApplication.java:124)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.main(CausalCmdApplication.java:105)
+2023-10-30 11:24:21 INFO  org.reflections.Reflections:229 - Reflections took 95 ms to scan 1 urls, producing 17 keys and 266 values 
+2023-10-30 11:24:21 INFO  org.reflections.Reflections:229 - Reflections took 28 ms to scan 1 urls, producing 7 keys and 41 values 
+2023-10-30 11:24:21 INFO  org.reflections.Reflections:229 - Reflections took 31 ms to scan 1 urls, producing 5 keys and 34 values 
+2023-10-30 11:24:27 INFO  org.reflections.Reflections:229 - Reflections took 90 ms to scan 1 urls, producing 17 keys and 266 values 
+2023-10-30 11:24:27 INFO  org.reflections.Reflections:229 - Reflections took 27 ms to scan 1 urls, producing 7 keys and 41 values 
+2023-10-30 11:24:27 INFO  org.reflections.Reflections:229 - Reflections took 20 ms to scan 1 urls, producing 5 keys and 34 values 
+2023-10-30 11:24:34 ERROR edu.cmu.tetrad.latest.LatestClient:105 - Could not contact server for latest version
+org.apache.http.conn.ConnectTimeoutException: Connect to cloud.ccd.pitt.edu:443 [cloud.ccd.pitt.edu/136.142.228.58] failed: Connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at edu.cmu.tetrad.latest.LatestClient.checkLatest(LatestClient.java:81)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.main(CausalCmdApplication.java:97)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 11 more
+2023-10-30 11:24:34 ERROR edu.pitt.dbmi.causal.cmd.CausalCmdApplication:107 - 
+java.nio.file.NoSuchFileException: recreate_results/learned_graphs/fci_1698679468736.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:224)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.runTetrad(CausalCmdApplication.java:124)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.main(CausalCmdApplication.java:105)
+2023-10-30 11:24:34 INFO  org.reflections.Reflections:229 - Reflections took 112 ms to scan 1 urls, producing 17 keys and 266 values 
+2023-10-30 11:24:34 INFO  org.reflections.Reflections:229 - Reflections took 23 ms to scan 1 urls, producing 7 keys and 41 values 
+2023-10-30 11:24:34 INFO  org.reflections.Reflections:229 - Reflections took 14 ms to scan 1 urls, producing 5 keys and 34 values 
+2023-10-30 11:24:39 INFO  org.reflections.Reflections:229 - Reflections took 114 ms to scan 1 urls, producing 17 keys and 266 values 
+2023-10-30 11:24:39 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 7 keys and 41 values 
+2023-10-30 11:24:39 INFO  org.reflections.Reflections:229 - Reflections took 20 ms to scan 1 urls, producing 5 keys and 34 values 
+2023-10-30 11:24:45 ERROR edu.cmu.tetrad.latest.LatestClient:105 - Could not contact server for latest version
+org.apache.http.conn.ConnectTimeoutException: Connect to cloud.ccd.pitt.edu:443 [cloud.ccd.pitt.edu/136.142.228.58] failed: Connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at edu.cmu.tetrad.latest.LatestClient.checkLatest(LatestClient.java:81)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.main(CausalCmdApplication.java:97)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 11 more
+2023-10-30 11:24:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file subsample_43.csv.
+2023-10-30 11:24:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file subsample_43.csv.
+2023-10-30 11:24:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 3538 cases and 27 variables.
+2023-10-30 11:24:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file subsample_43.csv.
+2023-10-30 11:24:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file subsample_43.csv.
+2023-10-30 11:24:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File subsample_43.csv contains 3538 cases, 27 variables.
+2023-10-30 11:24:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file knowledge.txt.
+2023-10-30 11:24:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file knowledge.txt.
+2023-10-30 11:43:36 INFO  org.reflections.Reflections:229 - Reflections took 96 ms to scan 1 urls, producing 17 keys and 266 values 
+2023-10-30 11:43:36 INFO  org.reflections.Reflections:229 - Reflections took 30 ms to scan 1 urls, producing 7 keys and 41 values 
+2023-10-30 11:43:36 INFO  org.reflections.Reflections:229 - Reflections took 15 ms to scan 1 urls, producing 5 keys and 34 values 
+2023-10-30 11:43:43 ERROR edu.cmu.tetrad.latest.LatestClient:105 - Could not contact server for latest version
+org.apache.http.conn.ConnectTimeoutException: Connect to cloud.ccd.pitt.edu:443 [cloud.ccd.pitt.edu/136.142.228.58] failed: Connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at edu.cmu.tetrad.latest.LatestClient.checkLatest(LatestClient.java:81)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.main(CausalCmdApplication.java:97)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 11 more
+2023-10-30 11:43:43 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file subsample_31.csv.
+2023-10-30 11:43:43 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file subsample_31.csv.
+2023-10-30 11:43:43 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 3538 cases and 27 variables.
+2023-10-30 11:43:43 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file subsample_31.csv.
+2023-10-30 11:43:43 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file subsample_31.csv.
+2023-10-30 11:43:43 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File subsample_31.csv contains 3538 cases, 27 variables.
+2023-10-30 11:43:43 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file knowledge.txt.
+2023-10-30 11:43:43 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file knowledge.txt.

@@ -1,0 +1,6 @@
+/knowledge
+
+addtemporal
+1 wing_shape back_pattern upper_tail_color bill_shape upperparts_color underparts_color under_tail_color tail_shape throat_color wing_pattern nape_color belly_color tail_pattern belly_pattern primary_color leg_color bill_length bill_color size crown_color wing_color back_color breast_color breast_pattern eye_color forehead_color
+2 y_pred
+
