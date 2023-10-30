@@ -1,0 +1,377 @@
+================================================================================
+FCI (Fri, May 15, 2020 12:54:11 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: subsample_0.csv
+header: yes
+delimiter: tab
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FCI
+test of independence: Chi Square Test
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+alpha: 0.0001
+completeRuleSetUsed: yes
+depth: 3
+maxPathLength: -1
+verbose: yes
+
+
+Fri, May 15, 2020 12:54:11 PM: Start data validation on file subsample_0.csv.
+Fri, May 15, 2020 12:54:11 PM: End data validation on file subsample_0.csv.
+There are 3538 cases and 27 variables.
+
+Fri, May 15, 2020 12:54:11 PM: Start reading in file subsample_0.csv.
+Fri, May 15, 2020 12:54:11 PM: Finished reading in file subsample_0.csv.
+Fri, May 15, 2020 12:54:11 PM: File subsample_0.csv contains 3538 cases, 27 variables.
+
+Start search: Fri, May 15, 2020 12:54:11 PM
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End search: Fri, May 15, 2020 02:53:20 PM
+
+================================================================================
+Graph Nodes:
+wing_shape;back_pattern;upper_tail_color;bill_shape;upperparts_color;underparts_color;under_tail_color;tail_shape;throat_color;wing_pattern;nape_color;belly_color;tail_pattern;belly_pattern;primary_color;leg_color;bill_length;bill_color;size;crown_color;wing_color;back_color;breast_color;breast_pattern;eye_color;forehead_color;y_pred
+
+Graph Edges:
+1. back_color --> crown_color dd nl
+2. back_color --> tail_pattern dd nl
+3. back_color --> wing_color dd nl
+4. back_pattern --> wing_color dd nl
+5. belly_color --> throat_color dd nl
+6. belly_pattern --> breast_pattern dd nl
+7. forehead_color --> breast_pattern dd nl
+8. forehead_color --> crown_color dd nl
+9. leg_color --> upperparts_color dd nl
+10. nape_color --> breast_pattern dd nl
+11. nape_color --> throat_color dd nl
+12. tail_shape --> throat_color dd nl
+13. under_tail_color --> crown_color dd nl
+14. underparts_color --> tail_shape dd nl
+15. upper_tail_color --> upperparts_color dd nl
+16. y_pred --> under_tail_color dd nl
+17. primary_color --> under_tail_color pd pl
+18. primary_color --> upperparts_color pd pl
+19. back_color <-> back_pattern
+20. back_color <-> belly_color
+21. back_color <-> belly_pattern
+22. back_color <-> bill_color
+23. back_color <-> bill_length
+24. back_color <-> bill_shape
+25. back_color <-> breast_color
+26. back_color <-> breast_pattern
+27. back_color <-> eye_color
+28. back_color <-> leg_color
+29. back_color <-> nape_color
+30. back_color <-> primary_color
+31. back_color <-> size
+32. back_color <-> tail_shape
+33. back_color <-> throat_color
+34. back_color <-> under_tail_color
+35. back_color <-> underparts_color
+36. back_color <-> upper_tail_color
+37. back_color <-> upperparts_color
+38. back_color o-> wing_pattern
+39. back_color o-> wing_shape
+40. back_color <-> y_pred
+41. back_pattern <-> belly_color
+42. back_pattern <-> bill_color
+43. back_pattern <-> bill_length
+44. back_pattern <-> bill_shape
+45. back_pattern <-> breast_color
+46. back_pattern <-> leg_color
+47. back_pattern <-> primary_color
+48. back_pattern <-> size
+49. back_pattern <-> underparts_color
+50. back_pattern <-> upper_tail_color
+51. back_pattern <-> upperparts_color
+52. back_pattern o-> wing_pattern
+53. back_pattern o-> wing_shape
+54. belly_color <-> belly_pattern
+55. belly_color <-> bill_length
+56. belly_color <-> breast_color
+57. belly_color <-> breast_pattern
+58. belly_color <-> crown_color
+59. belly_color <-> eye_color
+60. belly_color <-> leg_color
+61. belly_color <-> primary_color
+62. belly_color <-> tail_pattern
+63. belly_color <-> upper_tail_color
+64. belly_color o-> wing_pattern
+65. belly_color o-> wing_shape
+66. belly_pattern <-> back_pattern
+67. belly_pattern <-> bill_color
+68. belly_pattern <-> bill_length
+69. belly_pattern <-> breast_color
+70. belly_pattern <-> crown_color
+71. belly_pattern <-> eye_color
+72. belly_pattern <-> leg_color
+73. belly_pattern <-> primary_color
+74. belly_pattern <-> size
+75. belly_pattern <-> underparts_color
+76. belly_pattern <-> upper_tail_color
+77. belly_pattern <-> wing_color
+78. belly_pattern o-> wing_pattern
+79. belly_pattern o-> wing_shape
+80. bill_color <-> breast_pattern
+81. bill_color <-> crown_color
+82. bill_color <-> eye_color
+83. bill_color <-> wing_color
+84. bill_color o-> wing_pattern
+85. bill_color o-> wing_shape
+86. bill_length <-> bill_color
+87. bill_length <-> breast_color
+88. bill_length <-> breast_pattern
+89. bill_length <-> crown_color
+90. bill_length <-> size
+91. bill_length <-> wing_color
+92. bill_length o-> wing_pattern
+93. bill_length o-> wing_shape
+94. bill_shape <-> belly_color
+95. bill_shape <-> bill_color
+96. bill_shape <-> bill_length
+97. bill_shape <-> breast_pattern
+98. bill_shape <-> crown_color
+99. bill_shape <-> eye_color
+100. bill_shape <-> leg_color
+101. bill_shape <-> size
+102. bill_shape <-> tail_pattern
+103. bill_shape <-> throat_color
+104. bill_shape <-> under_tail_color
+105. bill_shape <-> upperparts_color
+106. bill_shape <-> wing_color
+107. bill_shape o-> wing_pattern
+108. bill_shape o-> wing_shape
+109. breast_color o-> wing_pattern
+110. breast_color o-> wing_shape
+111. breast_pattern <-> back_pattern
+112. breast_pattern <-> breast_color
+113. breast_pattern <-> primary_color
+114. breast_pattern <-> tail_pattern
+115. breast_pattern <-> under_tail_color
+116. breast_pattern <-> upper_tail_color
+117. breast_pattern <-> upperparts_color
+118. breast_pattern o-> wing_pattern
+119. breast_pattern o-> wing_shape
+120. crown_color <-> back_pattern
+121. crown_color <-> breast_color
+122. crown_color <-> breast_pattern
+123. crown_color <-> primary_color
+124. crown_color <-> tail_pattern
+125. crown_color <-> throat_color
+126. crown_color <-> upper_tail_color
+127. crown_color <-> upperparts_color
+128. crown_color <-> wing_color
+129. crown_color o-> wing_pattern
+130. crown_color o-> wing_shape
+131. eye_color o-> bill_length
+132. eye_color o-> forehead_color
+133. eye_color o-> leg_color
+134. eye_color o-> nape_color
+135. eye_color o-> wing_pattern
+136. eye_color o-> wing_shape
+137. eye_color o-> y_pred
+138. forehead_color <-> back_color
+139. forehead_color <-> back_pattern
+140. forehead_color <-> belly_color
+141. forehead_color <-> belly_pattern
+142. forehead_color <-> bill_color
+143. forehead_color <-> bill_length
+144. forehead_color <-> bill_shape
+145. forehead_color <-> breast_color
+146. forehead_color <-> leg_color
+147. forehead_color <-> nape_color
+148. forehead_color <-> primary_color
+149. forehead_color <-> size
+150. forehead_color <-> tail_pattern
+151. forehead_color <-> tail_shape
+152. forehead_color <-> throat_color
+153. forehead_color <-> under_tail_color
+154. forehead_color <-> underparts_color
+155. forehead_color <-> upper_tail_color
+156. forehead_color <-> upperparts_color
+157. forehead_color <-> wing_color
+158. forehead_color o-> wing_pattern
+159. forehead_color o-> wing_shape
+160. forehead_color <-> y_pred
+161. leg_color <-> bill_color
+162. leg_color <-> breast_color
+163. leg_color <-> breast_pattern
+164. leg_color <-> crown_color
+165. leg_color <-> size
+166. leg_color <-> wing_color
+167. leg_color o-> wing_pattern
+168. leg_color o-> wing_shape
+169. nape_color <-> back_pattern
+170. nape_color <-> belly_color
+171. nape_color <-> belly_pattern
+172. nape_color <-> bill_color
+173. nape_color <-> bill_length
+174. nape_color <-> bill_shape
+175. nape_color <-> breast_color
+176. nape_color <-> crown_color
+177. nape_color <-> leg_color
+178. nape_color <-> primary_color
+179. nape_color <-> size
+180. nape_color <-> tail_pattern
+181. nape_color <-> tail_shape
+182. nape_color <-> under_tail_color
+183. nape_color <-> underparts_color
+184. nape_color <-> upper_tail_color
+185. nape_color <-> upperparts_color
+186. nape_color <-> wing_color
+187. nape_color o-> wing_pattern
+188. nape_color o-> wing_shape
+189. primary_color <-> bill_color
+190. primary_color <-> breast_color
+191. primary_color o-> leg_color
+192. primary_color <-> size
+193. primary_color o-> underparts_color
+194. primary_color o-> upper_tail_color
+195. primary_color <-> wing_color
+196. primary_color o-> wing_pattern
+197. primary_color o-> wing_shape
+198. primary_color o-> y_pred
+199. size o-> bill_color
+200. size <-> breast_pattern
+201. size <-> crown_color
+202. size <-> eye_color
+203. size o-> wing_pattern
+204. size o-> wing_shape
+205. tail_pattern <-> back_pattern
+206. tail_pattern <-> belly_pattern
+207. tail_pattern <-> bill_color
+208. tail_pattern <-> bill_length
+209. tail_pattern <-> breast_color
+210. tail_pattern <-> leg_color
+211. tail_pattern <-> primary_color
+212. tail_pattern <-> size
+213. tail_pattern <-> under_tail_color
+214. tail_pattern <-> upper_tail_color
+215. tail_pattern <-> upperparts_color
+216. tail_pattern <-> wing_color
+217. tail_pattern o-> wing_pattern
+218. tail_pattern o-> wing_shape
+219. tail_shape <-> back_pattern
+220. tail_shape <-> belly_color
+221. tail_shape <-> belly_pattern
+222. tail_shape <-> bill_color
+223. tail_shape <-> bill_length
+224. tail_shape <-> bill_shape
+225. tail_shape <-> breast_color
+226. tail_shape <-> breast_pattern
+227. tail_shape <-> crown_color
+228. tail_shape <-> eye_color
+229. tail_shape <-> leg_color
+230. tail_shape <-> size
+231. tail_shape <-> tail_pattern
+232. tail_shape <-> upper_tail_color
+233. tail_shape <-> wing_color
+234. tail_shape o-> wing_pattern
+235. tail_shape o-> wing_shape
+236. throat_color <-> back_pattern
+237. throat_color <-> belly_pattern
+238. throat_color <-> bill_color
+239. throat_color <-> bill_length
+240. throat_color <-> breast_color
+241. throat_color <-> breast_pattern
+242. throat_color <-> leg_color
+243. throat_color <-> primary_color
+244. throat_color <-> size
+245. throat_color <-> tail_pattern
+246. throat_color <-> under_tail_color
+247. throat_color <-> upper_tail_color
+248. throat_color <-> upperparts_color
+249. throat_color <-> wing_color
+250. throat_color o-> wing_pattern
+251. throat_color o-> wing_shape
+252. under_tail_color <-> back_pattern
+253. under_tail_color <-> belly_color
+254. under_tail_color <-> belly_pattern
+255. under_tail_color <-> bill_color
+256. under_tail_color <-> bill_length
+257. under_tail_color <-> breast_color
+258. under_tail_color <-> leg_color
+259. under_tail_color <-> size
+260. under_tail_color <-> tail_shape
+261. under_tail_color <-> upper_tail_color
+262. under_tail_color <-> upperparts_color
+263. under_tail_color <-> wing_color
+264. under_tail_color o-> wing_pattern
+265. under_tail_color o-> wing_shape
+266. underparts_color <-> belly_color
+267. underparts_color <-> bill_color
+268. underparts_color <-> bill_length
+269. underparts_color <-> breast_color
+270. underparts_color <-> breast_pattern
+271. underparts_color <-> crown_color
+272. underparts_color <-> eye_color
+273. underparts_color <-> leg_color
+274. underparts_color <-> size
+275. underparts_color <-> tail_pattern
+276. underparts_color <-> throat_color
+277. underparts_color <-> under_tail_color
+278. underparts_color <-> wing_color
+279. underparts_color o-> wing_pattern
+280. underparts_color o-> wing_shape
+281. upper_tail_color <-> bill_color
+282. upper_tail_color <-> bill_length
+283. upper_tail_color <-> bill_shape
+284. upper_tail_color <-> breast_color
+285. upper_tail_color <-> leg_color
+286. upper_tail_color <-> size
+287. upper_tail_color <-> underparts_color
+288. upper_tail_color <-> wing_color
+289. upper_tail_color o-> wing_pattern
+290. upper_tail_color o-> wing_shape
+291. upperparts_color <-> belly_color
+292. upperparts_color <-> belly_pattern
+293. upperparts_color <-> bill_color
+294. upperparts_color <-> breast_color
+295. upperparts_color <-> size
+296. upperparts_color <-> tail_shape
+297. upperparts_color <-> underparts_color
+298. upperparts_color o-> wing_pattern
+299. upperparts_color o-> wing_shape
+300. wing_color <-> belly_color
+301. wing_color <-> breast_color
+302. wing_color <-> breast_pattern
+303. wing_color <-> eye_color
+304. wing_color <-> upperparts_color
+305. wing_color o-> wing_pattern
+306. wing_color o-> wing_shape
+307. wing_shape o-o wing_pattern
+308. y_pred <-> back_pattern
+309. y_pred <-> belly_color
+310. y_pred <-> belly_pattern
+311. y_pred <-> bill_color
+312. y_pred <-> bill_length
+313. y_pred <-> bill_shape
+314. y_pred <-> breast_color
+315. y_pred <-> breast_pattern
+316. y_pred <-> crown_color
+317. y_pred <-> leg_color
+318. y_pred <-> nape_color
+319. y_pred <-> size
+320. y_pred <-> tail_pattern
+321. y_pred <-> tail_shape
+322. y_pred <-> throat_color
+323. y_pred <-> underparts_color
+324. y_pred <-> upper_tail_color
+325. y_pred <-> upperparts_color
+326. y_pred <-> wing_color
+327. y_pred o-> wing_pattern
+328. y_pred o-> wing_shape

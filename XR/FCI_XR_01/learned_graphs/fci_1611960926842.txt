@@ -1,0 +1,49 @@
+================================================================================
+FCI (Fri, January 29, 2021 05:55:27 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: .DS_Store
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FCI
+test of independence: Chi Square Test
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+alpha: 0.01
+completeRuleSetUsed: yes
+depth: -1
+maxPathLength: -1
+verbose: no
+
+
+Fri, January 29, 2021 05:55:27 PM: Start data validation on file .DS_Store.
+Fri, January 29, 2021 05:55:27 PM: End data validation on file .DS_Store.
+There are 0 cases and 1 variables.
+
+Fri, January 29, 2021 05:55:27 PM: Start reading in file .DS_Store.
+Fri, January 29, 2021 05:55:27 PM: Finished reading in file .DS_Store.
+Fri, January 29, 2021 05:55:27 PM: File .DS_Store contains 0 cases, 1 variables.
+Fri, January 29, 2021 05:55:27 PM: Start reading in file knowledge.txt.
+Fri, January 29, 2021 05:55:27 PM: Finished reading in file knowledge.txt.
+
+Start search: Fri, January 29, 2021 05:55:27 PM
+End search: Fri, January 29, 2021 05:55:27 PM
+
+================================================================================
+Graph Nodes:
+Bud1% @ﾀ @ﾀ @ﾀ @E%DSDB`ﾀ @ﾀ @ﾀ @
+
+Graph Edges:

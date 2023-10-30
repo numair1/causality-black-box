@@ -1,0 +1,59 @@
+================================================================================
+FCI (Fri, January 29, 2021 05:32:18 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: subsample_12.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FCI
+test of independence: Chi Square Test
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+alpha: 0.1
+completeRuleSetUsed: yes
+depth: -1
+maxPathLength: -1
+verbose: no
+
+
+Fri, January 29, 2021 05:32:18 PM: Start data validation on file subsample_12.csv.
+Fri, January 29, 2021 05:32:18 PM: End data validation on file subsample_12.csv.
+There are 240 cases and 8 variables.
+
+Fri, January 29, 2021 05:32:18 PM: Start reading in file subsample_12.csv.
+Fri, January 29, 2021 05:32:18 PM: Finished reading in file subsample_12.csv.
+Fri, January 29, 2021 05:32:18 PM: File subsample_12.csv contains 240 cases, 8 variables.
+Fri, January 29, 2021 05:32:18 PM: Start reading in file knowledge.txt.
+Fri, January 29, 2021 05:32:18 PM: Finished reading in file knowledge.txt.
+
+Start search: Fri, January 29, 2021 05:32:18 PM
+End search: Fri, January 29, 2021 05:32:18 PM
+
+================================================================================
+Graph Nodes:
+y_pred;cardiomegaly;atelectasis;effusion;infiltration;mass;nodule;pneumothorax
+
+Graph Edges:
+1. atelectasis o-o effusion
+2. atelectasis o-o infiltration
+3. atelectasis o-> y_pred
+4. cardiomegaly o-o atelectasis
+5. cardiomegaly o-o effusion
+6. cardiomegaly o-o infiltration
+7. effusion o-o infiltration
+8. effusion o-> y_pred
+9. infiltration o-> y_pred
+10. mass o-o nodule

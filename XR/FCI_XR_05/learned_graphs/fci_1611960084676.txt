@@ -1,0 +1,58 @@
+================================================================================
+FCI (Fri, January 29, 2021 05:41:25 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: subsample_71.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FCI
+test of independence: Chi Square Test
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+alpha: 0.05
+completeRuleSetUsed: yes
+depth: -1
+maxPathLength: -1
+verbose: no
+
+
+Fri, January 29, 2021 05:41:25 PM: Start data validation on file subsample_71.csv.
+Fri, January 29, 2021 05:41:25 PM: End data validation on file subsample_71.csv.
+There are 240 cases and 8 variables.
+
+Fri, January 29, 2021 05:41:25 PM: Start reading in file subsample_71.csv.
+Fri, January 29, 2021 05:41:25 PM: Finished reading in file subsample_71.csv.
+Fri, January 29, 2021 05:41:25 PM: File subsample_71.csv contains 240 cases, 8 variables.
+Fri, January 29, 2021 05:41:25 PM: Start reading in file knowledge.txt.
+Fri, January 29, 2021 05:41:25 PM: Finished reading in file knowledge.txt.
+
+Start search: Fri, January 29, 2021 05:41:25 PM
+End search: Fri, January 29, 2021 05:41:25 PM
+
+================================================================================
+Graph Nodes:
+y_pred;cardiomegaly;atelectasis;effusion;infiltration;mass;nodule;pneumothorax
+
+Graph Edges:
+1. effusion --> y_pred dd nl
+2. atelectasis --> y_pred pd pl
+3. atelectasis o-> infiltration
+4. cardiomegaly o-o atelectasis
+5. cardiomegaly o-> effusion
+6. effusion <-> infiltration
+7. infiltration o-> y_pred
+8. mass o-o nodule
+9. nodule o-> y_pred

@@ -1,0 +1,55 @@
+================================================================================
+FCI (Fri, January 29, 2021 04:50:59 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: subsample_98.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FCI
+test of independence: Chi Square Test
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+alpha: 0.005
+completeRuleSetUsed: yes
+depth: -1
+maxPathLength: -1
+verbose: no
+
+
+Fri, January 29, 2021 04:50:59 PM: Start data validation on file subsample_98.csv.
+Fri, January 29, 2021 04:50:59 PM: End data validation on file subsample_98.csv.
+There are 240 cases and 8 variables.
+
+Fri, January 29, 2021 04:50:59 PM: Start reading in file subsample_98.csv.
+Fri, January 29, 2021 04:50:59 PM: Finished reading in file subsample_98.csv.
+Fri, January 29, 2021 04:50:59 PM: File subsample_98.csv contains 240 cases, 8 variables.
+Fri, January 29, 2021 04:50:59 PM: Start reading in file knowledge.txt.
+Fri, January 29, 2021 04:50:59 PM: Finished reading in file knowledge.txt.
+
+Start search: Fri, January 29, 2021 04:50:59 PM
+End search: Fri, January 29, 2021 04:50:59 PM
+
+================================================================================
+Graph Nodes:
+y_pred;cardiomegaly;atelectasis;effusion;infiltration;mass;nodule;pneumothorax
+
+Graph Edges:
+1. atelectasis o-> y_pred
+2. cardiomegaly o-> nodule
+3. effusion o-o infiltration
+4. effusion o-> y_pred
+5. infiltration o-> y_pred
+6. mass o-> nodule

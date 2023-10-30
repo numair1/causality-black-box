@@ -1,0 +1,5 @@
+/knowledge
+
+addtemporal
+1 cardiomegaly atelectasis effusion infiltration mass nodule pneumothorax
+2 y_pred

@@ -1,0 +1,59 @@
+================================================================================
+FCI (Fri, January 29, 2021 05:31:14 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: subsample_81.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FCI
+test of independence: Chi Square Test
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+alpha: 0.1
+completeRuleSetUsed: yes
+depth: -1
+maxPathLength: -1
+verbose: no
+
+
+Fri, January 29, 2021 05:31:14 PM: Start data validation on file subsample_81.csv.
+Fri, January 29, 2021 05:31:14 PM: End data validation on file subsample_81.csv.
+There are 240 cases and 8 variables.
+
+Fri, January 29, 2021 05:31:14 PM: Start reading in file subsample_81.csv.
+Fri, January 29, 2021 05:31:14 PM: Finished reading in file subsample_81.csv.
+Fri, January 29, 2021 05:31:14 PM: File subsample_81.csv contains 240 cases, 8 variables.
+Fri, January 29, 2021 05:31:14 PM: Start reading in file knowledge.txt.
+Fri, January 29, 2021 05:31:14 PM: Finished reading in file knowledge.txt.
+
+Start search: Fri, January 29, 2021 05:31:14 PM
+End search: Fri, January 29, 2021 05:31:14 PM
+
+================================================================================
+Graph Nodes:
+y_pred;cardiomegaly;atelectasis;effusion;infiltration;mass;nodule;pneumothorax
+
+Graph Edges:
+1. nodule --> y_pred dd nl
+2. mass --> y_pred pd pl
+3. atelectasis o-> cardiomegaly
+4. atelectasis o-> effusion
+5. atelectasis o-> y_pred
+6. cardiomegaly <-> nodule
+7. effusion o-> y_pred
+8. infiltration o-> effusion
+9. infiltration o-> y_pred
+10. mass o-> nodule
