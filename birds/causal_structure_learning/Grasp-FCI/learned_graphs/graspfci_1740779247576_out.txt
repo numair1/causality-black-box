@@ -1,0 +1,123 @@
+================================================================================
+GRASP-FCI (Fri, February 28, 2025 04:47:27 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: subsample_48.csv
+header: yes
+delimiter: tab
+quote char: none
+missing marker: none
+comment marker: none
+
+Knowledge
+--------------------------------------------------------------------------------
+file: knowledge.txt
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: GRASP-FCI
+test of independence: Chi Square Test
+score: BDeu Score
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: no
+alpha: 0.05
+completeRuleSetUsed: yes
+depth: 4
+doDiscriminatingPathRule: no
+graspDepth: 3
+graspNonSingularDepth: 1
+graspOrderedAlg: no
+graspSingularDepth: 1
+graspUseRaskuttiUhler: no
+maxPathLength: -1
+minCountPerCell: 1.0
+numberResampling: 0
+numStarts: 1
+percentResampleSize: 100
+possibleMsepDone: no
+priorEquivalentSampleSize: 10.0
+resamplingEnsemble: 1
+resamplingWithReplacement: no
+saveBootstrapGraphs: no
+seed: -1
+structurePrior: 0.0
+timeLag: 0
+useDataOrder: no
+verbose: no
+
+
+Fri, February 28, 2025 04:47:27 PM: Start data validation on file subsample_48.csv.
+Fri, February 28, 2025 04:47:27 PM: End data validation on file subsample_48.csv.
+There are 3538 cases and 27 variables.
+
+Fri, February 28, 2025 04:47:27 PM: Start reading in file subsample_48.csv.
+Fri, February 28, 2025 04:47:27 PM: Finished reading in file subsample_48.csv.
+Fri, February 28, 2025 04:47:27 PM: File subsample_48.csv contains 3538 cases, 27 variables.
+Fri, February 28, 2025 04:47:27 PM: Start reading in file knowledge.txt.
+Fri, February 28, 2025 04:47:27 PM: Finished reading in file knowledge.txt.
+
+Start search: Fri, February 28, 2025 04:47:27 PM
+End search: Fri, February 28, 2025 04:47:29 PM
+
+================================================================================
+Graph Nodes:
+wing_shape;back_pattern;upper_tail_color;bill_shape;upperparts_color;underparts_color;under_tail_color;tail_shape;throat_color;wing_pattern;nape_color;belly_color;tail_pattern;belly_pattern;primary_color;leg_color;bill_length;bill_color;size;crown_color;wing_color;back_color;breast_color;breast_pattern;eye_color;forehead_color;y_pred
+
+Graph Edges:
+1. back_color --> back_pattern
+2. back_color --> nape_color
+3. back_color --> primary_color
+4. back_color --> upperparts_color
+5. back_pattern --> belly_pattern
+6. belly_color --> belly_pattern
+7. belly_pattern --> breast_pattern
+8. bill_color --> leg_color
+9. bill_length --> bill_shape
+10. bill_length --> size
+11. breast_color --> belly_color
+12. breast_color --> breast_pattern
+13. breast_color --> throat_color
+14. breast_color --> underparts_color
+15. crown_color --> eye_color
+16. crown_color --> y_pred
+17. eye_color --> bill_color
+18. eye_color --> bill_length
+19. forehead_color --> crown_color
+20. nape_color --> breast_color
+21. nape_color --> crown_color
+22. nape_color --> forehead_color
+23. nape_color --> throat_color
+24. primary_color --> breast_color
+25. primary_color --> nape_color
+26. size --> wing_shape
+27. tail_pattern --> under_tail_color
+28. tail_pattern --> upper_tail_color
+29. tail_pattern o-o wing_pattern
+30. tail_shape o-o tail_pattern
+31. tail_shape --> wing_shape
+32. throat_color --> eye_color
+33. throat_color --> forehead_color
+34. throat_color --> underparts_color
+35. underparts_color --> belly_color
+36. underparts_color --> y_pred
+37. upper_tail_color --> back_color
+38. upper_tail_color --> under_tail_color
+39. wing_color --> back_color
+40. wing_color --> primary_color
+41. wing_color --> upper_tail_color
+42. wing_color --> upperparts_color
+43. wing_pattern --> back_pattern
+44. wing_pattern o-o wing_color
+45. y_pred <-> bill_color
+46. y_pred <-> bill_length
+47. y_pred <-> bill_shape
+48. y_pred <-> leg_color
+49. y_pred <-> size
