@@ -1,0 +1,80 @@
+================================================================================
+GRASP-FCI (Fri, February 28, 2025 04:18:24 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: subsample_60.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Knowledge
+--------------------------------------------------------------------------------
+file: knowledge.txt
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: GRASP-FCI
+test of independence: Chi Square Test
+score: BDeu Score
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: no
+alpha: 0.01
+completeRuleSetUsed: yes
+depth: -1
+doDiscriminatingPathRule: no
+graspDepth: 3
+graspNonSingularDepth: 1
+graspOrderedAlg: no
+graspSingularDepth: 1
+graspUseRaskuttiUhler: no
+maxPathLength: -1
+minCountPerCell: 1.0
+numberResampling: 0
+numStarts: 1
+percentResampleSize: 100
+possibleMsepDone: no
+priorEquivalentSampleSize: 10.0
+resamplingEnsemble: 1
+resamplingWithReplacement: no
+saveBootstrapGraphs: no
+seed: -1
+structurePrior: 0.0
+timeLag: 0
+useDataOrder: no
+verbose: no
+
+
+Fri, February 28, 2025 04:18:24 PM: Start data validation on file subsample_60.csv.
+Fri, February 28, 2025 04:18:24 PM: End data validation on file subsample_60.csv.
+There are 240 cases and 8 variables.
+
+Fri, February 28, 2025 04:18:24 PM: Start reading in file subsample_60.csv.
+Fri, February 28, 2025 04:18:24 PM: Finished reading in file subsample_60.csv.
+Fri, February 28, 2025 04:18:24 PM: File subsample_60.csv contains 240 cases, 8 variables.
+Fri, February 28, 2025 04:18:24 PM: Start reading in file knowledge.txt.
+Fri, February 28, 2025 04:18:24 PM: Finished reading in file knowledge.txt.
+
+Start search: Fri, February 28, 2025 04:18:24 PM
+End search: Fri, February 28, 2025 04:18:24 PM
+
+================================================================================
+Graph Nodes:
+y_pred;cardiomegaly;atelectasis;effusion;infiltration;mass;nodule;pneumothorax
+
+Graph Edges:
+1. atelectasis o-> y_pred
+2. effusion o-o atelectasis
+3. effusion o-> infiltration
+4. effusion o-> y_pred
+5. mass o-o nodule
+6. y_pred <-> infiltration
