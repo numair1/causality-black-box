@@ -1,0 +1,1 @@
+java -jar causal-cmd-1.12.0-jar-with-dependencies.jar --dataset $1 --data-type discrete --algorithm grasp-fci --delimiter comma --alpha $2 --completeRuleSetUsed --score bdeu-score --test chi-square-test --knowledge knowledge.txt --out $3
