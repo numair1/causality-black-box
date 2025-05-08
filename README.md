@@ -1,6 +1,15 @@
-# causality-black-box
+# Explaining the Behavior of Black-Box Prediction Algorithms with Causal Learning
 
-This is the official repository for the paper titled "Explaining The Behavior Of Black Box Algorithms Using Causal Learning".
+# Table Of Contents
+
+1. [Introduction](#introduction)
+2. [Simulation](#simulation)
+3. [Birds Data Example](#birds-data-example)
+4. [XR Data Example](#xr-data-example)
+
+## Introduction
+
+This is the official repository for the code used in the simulation and data applications for the paper "Explaining The Behavior Of Black Box Algorithms Using Causal Learning" by Sani, Malinksy and Shpitser (2025).
 
 This repository has the following three folders, each containing code on different aspects of paper, listed below:
 
