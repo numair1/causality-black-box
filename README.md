@@ -28,22 +28,22 @@ This group of files serves to train a HydraNet model, and save the output as Hyd
 
 ### Full Black Box Model Files
 
-This is the group of files that implement the HydraNet + logistic regression to create a full black-box model, and then 
-generate predictions on images that are subsequently used in TETRAD with the FCI algorithm to learn a causal graph.
+This is the group of files that implement the HydraNet + logistic regression combination to create a full black-box prediction model that behaves in a way as described in the simulation, and then generates predictions on images that are subsequently used in TETRAD with the FCI algorithm to learn the causal graph displayed in Figure 7(b). The follwiing files and directories are used in this step:
+
+- simulate_from_DGP.py : Generates images following the DGP outlined in the following [documentation/simulation.pdf](documentation/simulation.pdf) and stores it in [simulation/data_full_pipeline](simulation/data_full_pipeline).
+
 - data_full_pipeline: This directory contains 20k images, each containing horizontal bars, vertical bars, circles and 
 triangles simulated according to the DGP outlined in simulate_from_DGP.py.
-- simulate_from_DGP.py : generates images following the DGP outlined in documentation/simulation.pdf.
+
 - HydraNet_logistic_regression.ipynb: File that loads the saved HydraNet model, and then generates predictions on the 
 presence of horizontal bars, vertical bars, triangles and circles in each image in data_full_pipeline. The results of 
-these predictions is saved in HydraNet_predictions_data_full_pipeline, and the _hn suffix means that the feature annotation
+these predictions is saved in [HydraNet_predictions_data_full_pipeline.csv](HydraNet_predictions_data_full_pipeline.csv), and the _hn suffix means that the feature annotation
 is generated from a HydraNet prediction. Next, using the true y and the shape predictions from HydraNet, a logistic regression
-model is trained, and then used to generate predictions y_hat. This file is saved as black_box_predictions_data_full_pipeline.csv
+model is trained, and then used to generate predictions y_hat. This file is saved as [black_box_predictions_data_full_pipeline.csv](black_box_predictions_data_full_pipeline.csv).
+
+
 - black_box_predictions_data_full_pipeline.csv: This file is then used as input to TETRAD to run the FCI algorithm at 
 0.005 significance, and with horizontal bar excluded in order to obtain the final graph.
-
-#### Hyperparameter Settings
-
-TO DO: Add in details regarding the setting of various hyperparameters for replicability. 
 
 ## Birds Data Example
 
