@@ -70,13 +70,25 @@ The output of this is saved in data/consolidated_dataset. This gives an image da
 - data_cleaning/balance_classes.py: Downsamples the over-represented classes outputted from the above coarse grouping saved the directory
 data/consolidated_dataset. Sparrow and Warbler are overrepresented and consequently downsampled. 
 - data_cleaning/split_data.py: Splits the dataset into a 70-15-15 train/val/test split.
-- data_cleaning/colorize.py: Discards .DS_Store files as well as images that are in grayscale.
+- data_cleaning/colorize.py: Discards .DS_Store files as well as discrads images that are in grayscale.
 
 ### Model Training
 
+The model is trained on the ResNet18 architecture with pre-trained weights loaded, and then fine tuned on the data. The [train_net.py](birds/network_training/train_net.py) file contains the relevant code for training the model, as well as saving the predictions for each imagine in [model_preds.txt](birds/network_training/model_preds.txt).
 
 ### Structure Learning
 
+The following files are involved in the final pipeline:
+
+- causal_structure_learning/create_TETRAD_dataset.py: Takes the image attributes in data/CUB_200_2011/CUB_200_2011/attributes/image_attribute_labels.txt, coarsens them accroding to the grouping outlined in Appendix C.2, and then joins with the model_preds.txt to output [birds_dataset.txt](birds/causal_structure_learning/birds_dataset.txt).
+  
+- causal_structure_learning/subsample_data.py: Performs sampling with replacement to generated bootstrapped datasets based on birds_dataset.txt. These bootstrapped datasets can be found in the birds/causal_structure_learning/subsampled_datasets directory.
+  
+- FCI.sh and run_FCI.py: Bash script and Python script respectively that apply the FCI algorithm to all the datasets in the subsampled_datasets directory and saves the output of the FCI algorithm in [FCI_birds_05_depth4](birds/causal_structure_learning/FCI_birds_05_depth4), with an individual FCI file corresponding to each dataset.
+
+- compute_importance.py: Parses the output of the FCI algorithm and computes the importance of each features and displays it as a dictionary.
+
+- plot_bar_graphs.py: Takes the resulting importances computed for both the birds and the X-Ray example creates bar graphs used in Figure 8.
 
 ## XR Data Example
 
