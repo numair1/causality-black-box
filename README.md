@@ -90,6 +90,12 @@ The following files are involved in the final pipeline:
 
 - plot_bar_graphs.py: Takes the resulting importances computed for both the birds and the X-Ray example creates bar graphs used in Figure 8.
 
+### Grasp-FCI Results
+
+The directory [Grasp-FCI Birds](birds/causal_structure_learning/Grasp-FCI Birds) used the same subsmapled datasets and applies the Grasp-FCI algorithm as a comparison to the regular FCI algorithm shown. The code in the directory follows a similar analysis format and naming convention as above, and the results can be found in the Appendix of the paper. 
+
+
+
 ## XR Data Example
 
 ### Data Cleaning
