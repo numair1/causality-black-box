@@ -15,7 +15,7 @@ This repository contains the code for the simulation in Section 5, as well as th
 
 ## Simulation
 
-This folder contists of two groups of files, the first group helping train the HydraNet network, and the second group helping combine it with the logistic regression to create a black box model with established ground truths. Each of these groups is described below
+This folder contists of the code for the simulation in Section 5 of the paper. It contains two groups of files, the first group of files contain code for helping train the HydraNet network, the original reference and code for which can be found [here](https://pyimagesearch.com/2022/08/17/multi-task-learning-and-hydranets-with-pytorch/). The second group of files helps combine it with the logistic regression to create a black box model that behaves in the desired way as described in the simulation details. Each of these groups of files is described below.
 
 ### HydraNet Files
 
