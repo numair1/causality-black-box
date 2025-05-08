@@ -38,9 +38,9 @@ triangles simulated according to the DGP outlined in simulate_from_DGP.py.
 
 - HydraNet_logistic_regression.ipynb: File that loads the saved HydraNet model, and then generates predictions on the 
 presence of horizontal bars, vertical bars, triangles and circles in each image in data_full_pipeline. The results of 
-these predictions is saved in [HydraNet_predictions_data_full_pipeline.csv](HydraNet_predictions_data_full_pipeline.csv), and the _hn suffix means that the feature annotation
+these predictions is saved in [HydraNet_predictions_data_full_pipeline.csv](simulation/HydraNet_predictions_data_full_pipeline.csv), and the _hn suffix means that the feature annotation
 is generated from a HydraNet prediction. Next, using the true y and the shape predictions from HydraNet, a logistic regression
-model is trained, and then used to generate predictions y_hat. This file is saved as [black_box_predictions_data_full_pipeline.csv](black_box_predictions_data_full_pipeline.csv).
+model is trained, and then used to generate predictions y_hat. This file is saved as [black_box_predictions_data_full_pipeline.csv](simulation/black_box_predictions_data_full_pipeline.csv).
 
 
 - black_box_predictions_data_full_pipeline.csv: This file is then used as input to TETRAD to run the FCI algorithm at 
