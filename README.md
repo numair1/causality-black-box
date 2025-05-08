@@ -43,8 +43,8 @@ is generated from a HydraNet prediction. Next, using the true y and the shape pr
 model is trained, and then used to generate predictions y_hat. This file is saved as [black_box_predictions_data_full_pipeline.csv](simulation/black_box_predictions_data_full_pipeline.csv).
 
 
-- black_box_predictions_data_full_pipeline.csv: This file is then used as input to TETRAD to run the FCI algorithm at 
-0.005 significance, and with horizontal bar excluded in order to obtain the final graph.
+- black_box_predictions_data_full_pipeline.csv: This file is then used as input to [TETRAD GUI](https://www.cmu.edu/dietrich/philosophy/tetrad/use-tetrad/tetrad-application.html) to run the FCI algorithm at 
+0.005 significance, with the v_bar,circle,triangle along with y_hat being used, as the nodes and with horizontal bar excluded in order to obtain the final graph. Background knowledge that y_hat is a descendant of the features is also utilized. 
 
 ## Birds Data Example
 
