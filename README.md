@@ -6,6 +6,7 @@
 2. [Simulation](#simulation)
 3. [Birds Data Example](#birds-data-example)
 4. [XR Data Example](#xr-data-example)
+5. [Documentation](#documentation)
 
 ## Introduction
 
@@ -70,3 +71,8 @@ The output of this is saved in data/consolidated_dataset. This gives an image da
 data/consolidated_dataset. Sparrow and Warbler are overrepresented and consequently downsampled. 
 - data_cleaning/split_data.py: Splits the dataset into a 70-15-15 train/val/test split.
 - data_cleaning/colorize.py: Discards .DS_Store files as well as images that are in grayscale.
+
+## Documentation
+
+This directory contains calculations for the SHAP counterexample in Example 1, as well as the data generation process used in the simulation.
+
