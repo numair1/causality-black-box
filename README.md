@@ -7,6 +7,7 @@
 3. [Birds Data Example](#birds-data-example)
 4. [XR Data Example](#xr-data-example)
 5. [Documentation](#documentation)
+6. [Acknowledgement](#acknowledgement) 
 
 ## Introduction
 
@@ -100,14 +101,14 @@ The LIME and SHAP results for birds can be found in the [LIME_SHAP_birds](birds/
 
 ## XR Data Example
 
-### Data Cleaning
+The dataset used for this experiment can be found [here](https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/36938765345). The pipeline used for this experiment is similar to the one used above, and the relevant files are organized in the same directory strcuture as well. The output from the ResNet-18 prediction model is saved in [model_preds_normal_baseline.txt](XR/network_training/model_preds_normal_baseline.txt). This is then merged with annotation to create the file [combined_pred_annotated.csv](XR/causal_structure_learning/combined_pred_annotated.csv). And this is put through the same FCI pipeline with the hyperparameters described in the paper, with different results for different alpha levels saved in directories titled FCI_XR_XX where XX is the alpha value without the decimal, i.e. FCI_XR_1 has alpha of 0.1, FCI_XR_01 has alpha of 0.01 and so on. The importance is computed and plotted in a similar manner as the birds dataset. 
 
-### Model Training
-
-### Structure Learning
-
+Finally, the LIME_XR and SHAP_XR contain the code for the LIME and SHAP applied to the X-Ray data, and use the same package and approach as that used by birds. 
 
 ## Documentation
 
 This directory contains calculations for the SHAP counterexample in Example 1, as well as the data generation process used in the simulation.
 
+## Acknowledgement
+
+We use the TETRAD software and it's GUI and command line versions extensively though this project, and additional details and their homepage can be found [here](https://www.cmu.edu/dietrich/philosophy/tetrad/index.html).
