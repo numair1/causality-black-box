@@ -72,6 +72,9 @@ data/consolidated_dataset. Sparrow and Warbler are overrepresented and consequen
 - data_cleaning/split_data.py: Splits the dataset into a 70-15-15 train/val/test split.
 - data_cleaning/colorize.py: Discards .DS_Store files as well as images that are in grayscale.
 
+## XR Data Example
+
+
 ## Documentation
 
 This directory contains calculations for the SHAP counterexample in Example 1, as well as the data generation process used in the simulation.
