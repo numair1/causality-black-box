@@ -94,7 +94,9 @@ The following files are involved in the final pipeline:
 
 The directory [Grasp-FCI Birds](birds/causal_structure_learning/Grasp-FCI%20Birds) used the same subsmapled datasets and applies the Grasp-FCI algorithm as a comparison to the regular FCI algorithm shown. The code in the directory follows a similar analysis format and naming convention as above, and the results can be found in the Appendix of the paper. 
 
+### LIME And SHAP Results
 
+The LIME and SHAP results for birds can be found in the [LIME_SHAP_birds](birds/LIME_SHAP_birds) directory, and we used the following implementations for [LIME](https://github.com/marcotcr/lime) and [SHAP](https://github.com/shap/shap).
 
 ## XR Data Example
 
