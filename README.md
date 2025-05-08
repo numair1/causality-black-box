@@ -92,7 +92,7 @@ The following files are involved in the final pipeline:
 
 ### Grasp-FCI Results
 
-The directory [Grasp-FCI Birds](birds/causal_structure_learning/Grasp-FCI_Birds) used the same subsmapled datasets and applies the Grasp-FCI algorithm as a comparison to the regular FCI algorithm shown. The code in the directory follows a similar analysis format and naming convention as above, and the results can be found in the Appendix of the paper. 
+The directory [Grasp-FCI Birds](birds/causal_structure_learning/Grasp-FCI%20Birds) used the same subsmapled datasets and applies the Grasp-FCI algorithm as a comparison to the regular FCI algorithm shown. The code in the directory follows a similar analysis format and naming convention as above, and the results can be found in the Appendix of the paper. 
 
 
 
