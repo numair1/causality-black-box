@@ -9,13 +9,9 @@
 
 ## Introduction
 
-This is the official repository for the code used in the simulation and data applications for the paper "Explaining The Behavior Of Black Box Algorithms Using Causal Learning" by Sani, Malinksy and Shpitser (2025).
+This is the official repository for the code used in the simulation and data applications for the paper "Explaining The Behavior Of Black Box Algorithms Using Causal Learning" by Sani, Malinksy and Shpitser (2025). The paper can be found [here](https://arxiv.org/pdf/2006.02482).
 
-This repository has the following three folders, each containing code on different aspects of paper, listed below:
-
-1. /simulation - code for the HydraNet implmentation, along with the subsequent logistic regression and causal discovery parts of the simulation.
-2. /birds - code for the ResNet18 pretrained classification model, output of causal discovery datasets, as well as the implementation of lime and SHAP.
-3. /XR - code for XR example, along with the relevant LIME and SHAP implementations.  
+This repository contains the code for the simulation in Section 5, as well as the code for the experiments in Section 6 of the paper. The documentation directory contains miscellaneous notes and calculations for the simulation and examples used in the paper.  
 
 ## Simulation
 
